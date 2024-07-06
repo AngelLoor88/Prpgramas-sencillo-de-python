@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Aprendizaje</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0; /* Color de fondo */
+        }
+        
+        header {
+            background: #2193b0;
+            background: -webkit-linear-gradient(to right, hsla(191, 78%, 68%, 0.479), hsla(192, 68%, 41%, 0.651)), url(../../img/1.png);
+            background: linear-gradient(to right, hsla(191, 89%, 17%, 0.678), hsla(192, 84%, 25%, 0.644)), url(../../img/1.png);
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+            height: 600px;
+            text-align: center;
+            color: whitesmoke;
+        }
+        
+        .textos-header {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .textos-header h1 {
+            font-size: 3em;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: whitesmoke;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        nav ul li a:hover {
+            color: #bdc1c5;
+        }
+        
+        .wave {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+        
+        .wave svg {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .btn-clases {
+            background-color: #414141;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            text-transform: uppercase;
+        }
+        
+        .btn-clases:hover {
+            background-color: #2193b0;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: #414141;
+            padding: 60px 0 30px;
+            color: white;
+            text-align: center;
+        }
+        
+        .contenedor-footer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        
+        .content-foo {
+            margin: 0 20px;
+        }
+        
+        .content-foo h4 {
+            border-bottom: 3px solid #05947c;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .content-foo p {
+            color: #ccc;
+        }
+        
+        .titulo-final {
+            font-size: 1.2em;
+            color: #9e9797;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="textos-header"> 
+            <h1>PLATAFORMA DE APRENDIZAJE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="iniciosec.html">Inicio</a></li>
+                <li><a href="empleabilidad.html">Mi Progreso</a></li>
+                <li><a href="index.html">Actividades</a></li>
+            </ul>
+        </nav>
+        <div class="wave">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </header>
+
+    <div class="container">
+        <center>
+            <section id="tareas">
+                <h2>Tareas</h2>
+                <button class="btn-clases" onclick="location.href='tareas.html'">Tareas</button>
+            </section>
+
+            <section id="examen">
+                <h2>Diapositivas del Módulo</h2>
+                <button class="btn-clases" onclick="location.href='diapositiva.html'">Diapositivas</button>
+            </section>
+
+            <section id="examen-final">
+                <h2>Examen Final</h2>
+                <button class="btn-clases" onclick="location.href='examen.html'">EXAMEN FINAL</button>
+            </section>
+        </center>
+    </div>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>E-mail</h4>
+                <p>Codekidseducawe@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Phone</h4>
+                <p>099999999</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; 2024 CodeKids EducaWeb. Todos los derechos reservados.</h2>
+    </footer>
+</body>
+</html>
